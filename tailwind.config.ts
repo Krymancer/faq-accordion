@@ -14,9 +14,13 @@ const config: Config = {
     },
     colors: {
       'white': 'hsl(0, 0%, 100%)',
+      'pink': '#AD28EB',
       'light-pink': 'hsl(275, 100%, 97%)',
       'grayish-purple': 'hsl(292, 16%, 49%)',
       'dark-purple': 'hsl(292, 42%, 14%)',
+    },
+    boxShadow: {
+      'default': '0px 32px 56px 0px rgba(80, 0, 118, 0.10)'
     }
   },
   plugins: [],
