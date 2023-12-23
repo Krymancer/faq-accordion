@@ -21,7 +21,7 @@ function FaqItem({ question }: { question: string }) {
 
 export default function Home() {
   return (
-    <main className='min-h-screen flex bg-grayish-purple relative'>
+    <main className='min-h-screen flex bg-light-pink relative'>
       <div className='w-full border-none'>
         <div className="w-full h-[232px] relative block sm:hidden">
           <Image src={BacgroundMobile} alt="background pattern" fill />
@@ -30,11 +30,11 @@ export default function Home() {
           <Image src={BacgroundDesktop} alt="background pattern" fill />
         </div>
       </div>
-      <div className='absolute px-6 top-36 w-full'>
+      <div className='absolute px-6 top-[142.5px] sm:top-[167.5px] w-full'>
         <div className='p-6 flex flex-col items-start gap-6 self-stretch rounded-lg bg-white shadow-default w-full text-dark-purple max-w-[600px] mx-auto'>
           <div className='flex items-center gap-6'>
             <Image src={IconStar} alt="icon star" height={24} width={24} />
-            <h1 className='text-[32px] font-bold'>FAQs</h1>
+            <h1 className='text-[32px] sm:text-[56px] font-bold'>FAQs</h1>
           </div>
           <div className='flex items-center gap-6'>
             <h2 className='font-semibold'>What is Frontend Mentor, and how will it help me?</h2>
