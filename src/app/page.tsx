@@ -13,7 +13,7 @@ function Separator() {
 function FaqItem({ question }: { question: string }) {
   return (
     <div className='flex items-center gap-6 justify-between cursor-pointer'>
-      <h2 className='font-semibold hover:text-pink transition-all'>{question}</h2>
+      <h2 className='font-semibold hover:text-pink transition-all sm:text-[18px]'>{question}</h2>
       <Image src={IconPlus} alt="icon star" height={30} width={30} />
     </div>
   )
@@ -37,11 +37,11 @@ export default function Home() {
             <h1 className='text-[32px] sm:text-[56px] font-bold'>FAQs</h1>
           </div>
           <div className='flex items-center gap-6'>
-            <h2 className='font-semibold'>What is Frontend Mentor, and how will it help me?</h2>
+            <h2 className='font-semibold sm:text-[18px]'>What is Frontend Mentor, and how will it help me?</h2>
             <Image src={IconMinus} alt="icon star" height={30} width={30} />
           </div>
           <div>
-            <p className='text-grayish-purple'>Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It&apos;s suitable for all levels and ideal for portfolio building.</p>
+            <p className='text-grayish-purple text-[14px] sm:text-[16px]'>Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It&apos;s suitable for all levels and ideal for portfolio building.</p>
             <Separator />
             <FaqItem question='Is Frontend Mentor free?' />
             <Separator />
