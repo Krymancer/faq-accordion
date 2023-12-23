@@ -7,7 +7,7 @@ import IconPlus from '@/assets/images/icon-plus.svg';
 import IconStar from '@/assets/images/icon-star.svg';
 
 function Separator() {
-  return (<div className='bg-light-pink h-[1px] self-stretch my-5'></div>)
+  return (<div className='bg-light-pink h-[1px] self-stretch my-5 sm:my-6'></div>)
 }
 
 function FaqItem({ question }: { question: string }) {
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
       <div className='absolute px-6 top-[142.5px] sm:top-[167.5px] w-full'>
-        <div className='p-6 flex flex-col items-start gap-6 self-stretch rounded-lg bg-white shadow-default w-full text-dark-purple max-w-[600px] mx-auto'>
+        <div className='p-6 sm:p-10 flex flex-col items-start gap-6 sm:gap-8 self-stretch rounded-lg bg-white shadow-default w-full text-dark-purple max-w-[600px] mx-auto'>
           <div className='flex items-center gap-6'>
             <Image src={IconStar} alt="icon star" height={24} width={24} />
             <h1 className='text-[32px] sm:text-[56px] font-bold'>FAQs</h1>
