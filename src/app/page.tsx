@@ -13,7 +13,7 @@ function Separator() {
 function FaqItem({ question }: { question: string }) {
   return (
     <div className='flex items-center gap-6 justify-between cursor-pointer'>
-      <h2 className='font-semibold hover:text-pink transition-all sm:text-[18px]'>{question}</h2>
+      <h2 className='font-semibold hover:text-pink transition-all'>{question}</h2>
       <Image src={IconPlus} alt="icon star" height={30} width={30} />
     </div>
   )
@@ -33,11 +33,11 @@ export default function Home() {
       <div className='absolute px-6 top-[142.5px] sm:top-[167.5px] w-full'>
         <div className='p-6 sm:p-10 flex flex-col items-start gap-6 sm:gap-8 self-stretch rounded-lg bg-white shadow-default w-full text-dark-purple max-w-[600px] mx-auto'>
           <div className='flex items-center gap-6'>
-            <Image src={IconStar} alt="icon star" height={24} width={24} />
-            <h1 className='text-[32px] sm:text-[56px] font-bold'>FAQs</h1>
+            <Image src={IconStar} alt="icon star" height={40} width={40} />
+            <h1 className='text-[32px] sm:text-[48px] font-bold'>FAQs</h1>
           </div>
-          <div className='flex items-center gap-6'>
-            <h2 className='font-semibold sm:text-[18px]'>What is Frontend Mentor, and how will it help me?</h2>
+          <div className='flex items-center gap-6 justify-between'>
+            <h2 className='font-semibold'>What is Frontend Mentor, and how will it help me?</h2>
             <Image src={IconMinus} alt="icon star" height={30} width={30} />
           </div>
           <div>
